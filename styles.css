@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/reality-hyper');
+:root{
+    --main_fonts: "Darker Grotesque", sans-serif;
+    --secondary_fonts: "Poppins", sans-serif;;
+    --logo_fonts: "Reality Hyper", sans-serif;
+}
+
+*{
+    color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-boxs;
+  list-style-type: none;
+  text-decoration: none;
+   
+}
+
+.header{
+   width: 100%;
+   display: grid;
+   background-color: #1B1A1F;
+   grid-template-columns: repeat(3, 1fr);
+   align-items: center;
+   padding: 0px 80px;
+   border-bottom: 1px solid white;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+  
+    grid-template-rows: minmax(80px, auto) minmax(820px, 5fr) minmax(453px, auto);
+}
+
+.header_icon{
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: column;
+    justify-self: end;
+}
+
+.header_icon svg{
+    width: 24px;
+    height: 24px;
+    fill: white;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main_baner{
+    background-color: #1B1A1F;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 0;
+    gap: 40px;
+}
+
+/* baner content start */
+ .baner_content_box{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 
+    "baner_icon logo_text1"
+    "baner_icon logo_text2"
+    "baner_icon baner_desc"
+    "baner_icon baner_btn"
+    "baner_icon iframe"
+ }
+
+ .logo_text1{
+    grid-area: logo_text1;
+ }
+ .logo_text2{
+    grid-area: logo_text2;
+ }
+ .baner_desc{
+    grid-area: baner_desc;
+ }
+ .baner_btn{
+    grid-area: baner_btn;
+ }
+ iframe{
+    grid-area: iframe;
+ }
+ .baner_icon{
+       grid-area: baner_icon;
+ }
+ .baner_icon svg{
+      fill: white;
+      width: 20px;
+      height: 150px;
+ 
+      
+    
+ }
+/* baner content end */
+
+.logo_text1{
+    font-size: 105px;
+    font-weight: 400;
+    font-family: var(--secondary_fonts);
+}
+.logo_text2{
+    font-weight: 400;
+    font-size: 50px;
+}
+.baner_desc{
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.button{
+    width: 151px;
+    height: 51px;
+    background-color: #EB4C56;
+    color: white;
+    padding: 12px 32px 12px 32px;
+    font-size: 16px;
+    font-weight: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
